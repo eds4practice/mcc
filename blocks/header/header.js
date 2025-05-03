@@ -108,6 +108,7 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
  * @param {Element} block The header block element
  */
 export default async function decorate(block) {
+  console.log(block);
   // load nav as fragment
   const navMeta = getMetadata('nav');
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
@@ -146,6 +147,8 @@ export default async function decorate(block) {
     });
   }
 
+
+
   // hamburger for mobile
   const hamburger = document.createElement('div');
   hamburger.classList.add('nav-hamburger');
@@ -163,4 +166,17 @@ export default async function decorate(block) {
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
+
+  
+var currentPage = window.location.pathname;
+
+  // Get all navigation items
+  const navItems = document.querySelectorAll("#nav li a");
+  // Loop through navigation items and add 'active' class to the matching item
+   navItems.forEach(function(item) {
+    if (item.getAttribute("href") === currentPage) {
+     item.classList.add("active");
+    }
+  });
+
 }

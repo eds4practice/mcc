@@ -1,0 +1,28 @@
+.events > div {
+    border-bottom: 1px solid #5092b3;
+}
+.events > div:last-child {
+    border: none;
+}
+.events > div:first-child strong {
+    font-size: 40px;
+    color: #0f4d6b;
+}
+
+@media (width >= 900px) {
+    .events > div {
+        display: flex;
+    }
+    .events > div div {
+        flex: 1;
+    }
+    .events > div .button-container:last-child {
+        text-align: center;
+    }
+    .events strong {
+        color: #5092b3;
+    }
+    .events .button-container {
+        text-align: right;
+    }
+}
