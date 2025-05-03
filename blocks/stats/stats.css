@@ -1,0 +1,20 @@
+.stats strong {
+    font-size: 25px;
+}
+
+.stats > div div p {
+    text-align: center;
+}
+
+@media (width >= 900px) {
+    .stats > div {
+        display: flex;
+    }
+    .stats > div div {
+        flex: 1;
+    }
+    .stats strong {
+        font-size: 90px;
+        color: #5092b3;
+    }
+}

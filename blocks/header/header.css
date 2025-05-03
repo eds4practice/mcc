@@ -48,6 +48,7 @@ header nav[aria-expanded='true'] {
 header nav p {
   margin: 0;
   line-height: 1;
+  text-align: center;
 }
 
 header nav a:any-link {
@@ -138,10 +139,17 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
 /* brand */
 header .nav-brand {
   grid-area: brand;
-  flex-basis: 128px;
+  flex-basis: 215px;
   font-size: var(--heading-font-size-s);
   font-weight: 700;
   line-height: 1;
+}
+header .nav-brand p a:first-child {
+  font-size: 50px;
+}
+
+header .nav-brand p a {
+  font-size: 16px;
 }
 
 header nav .nav-brand img {
@@ -183,9 +191,10 @@ header nav .nav-sections ul > li > ul > li {
 
 @media (width >= 900px) {
   header nav .nav-sections {
-    display: block;
+    display: flex !important;
     visibility: visible;
     white-space: nowrap;
+    justify-content: center;
   }
 
   header nav[aria-expanded='true'] .nav-sections {
