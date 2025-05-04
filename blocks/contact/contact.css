@@ -1,0 +1,14 @@
+.contact {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.contact p {
+    color: white;
+}
+@media (width >= 900px) {
+    .contact > div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+}

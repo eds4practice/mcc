@@ -279,3 +279,10 @@ main .section.highlight {
     background-color: var(--light-color);
     margin: 0;
 }
+main .section.center-align {
+    text-align: center;
+}
+main .section.highlight-contact {
+    background-color: #0f4d6b;
+    margin: 0;
+}
