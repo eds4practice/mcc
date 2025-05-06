@@ -1,6 +1,5 @@
 {
   "project": "mcc",
-  "base" : "/tools/sidekick/library.xlsx",
   "plugins": [
     {
       "id": "library",
